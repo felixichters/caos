@@ -1,0 +1,13 @@
+# build artifact
+/caos
+
+# generated data / plots
+*.tsv
+*.png
+
+# nix
+/result
+
+# editor/object cruft
+*.o
+*.swp
