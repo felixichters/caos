@@ -92,13 +92,3 @@ gnuplot -p -e "set logscale y; plot 'data.tsv' u 1:6 pt 7 ps 0.3 title 'transien
 
 Replace `-p` (persistent window) with `-e "set term dumb;"` for an in-terminal plot.
 
-## Files
-
-| file              | role                                                        |
-|-------------------|-------------------------------------------------------------|
-| `ca.{h,c}`        | engine: lambda tables (both methods), constraints, stepping |
-| `stats.{h,c}`     | entropy, mutual information, transient detection            |
-| `viz.c`           | 1D ASCII space-time visualization                           |
-| `sweep.c`         | lambda sweep, TSV output                                    |
-| `main.c`          | subcommand dispatch                                         |
-| `rng.h` / `args.h`| xorshift PRNG / CLI parsing                                 |
